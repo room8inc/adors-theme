@@ -1,0 +1,43 @@
+<div class="contact-form-wrapper">
+    <div class="form-group mb-6">
+        <label class="block text-sm font-medium text-gray-700 mb-2">お名前 <span class="text-red-500">*</span></label>
+        [text* your-name placeholder "お名前を入力してください"]
+    </div>
+
+    <div class="form-group mb-6">
+        <label class="block text-sm font-medium text-gray-700 mb-2">会社名・組織名</label>
+        [text your-company placeholder "会社名・組織名を入力してください"]
+    </div>
+
+    <div class="form-group mb-6">
+        <label class="block text-sm font-medium text-gray-700 mb-2">メールアドレス <span class="text-red-500">*</span></label>
+        [email* your-email placeholder "example@email.com"]
+    </div>
+
+    <div class="form-group mb-6">
+        <label class="block text-sm font-medium text-gray-700 mb-2">電話番号</label>
+        [tel your-phone placeholder "090-1234-5678"]
+    </div>
+
+    <div class="form-group mb-6">
+        <label class="block text-sm font-medium text-gray-700 mb-2">お問い合わせ種別 <span class="text-red-500">*</span></label>
+        [select* inquiry-type include_blank "選択してください" "概算見積もり依頼" "スポット相談" "顧問契約の相談" "リスク診断" "届出作成" "スマメ（アプリ）について" "その他"]
+    </div>
+
+    <div class="form-group mb-6">
+        <label class="block text-sm font-medium text-gray-700 mb-2">お問い合わせ内容 <span class="text-red-500">*</span></label>
+        [textarea* your-message rows:6 placeholder "お問い合わせ内容をご記入ください"]
+    </div>
+
+    <div class="form-group mb-6 flex items-start">
+        <label class="flex items-center">
+            [acceptance privacy-policy]
+            <span class="text-sm text-gray-600 ml-2"><a href="/privacy-policy" class="text-primary hover:underline" target="_blank">プライバシーポリシー</a>に同意します <span class="text-red-500">*</span></span>
+        </label>
+    </div>
+
+    <div class="form-group pt-4">
+        [submit "送信する"]
+    </div>
+</div>
+

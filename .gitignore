@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# 不要なドキュメント
+docs/BUSINESS_PLAN.md
+docs/CONTENT_AUDIT.md
+docs/STRATEGIC_REVIEW.md
+

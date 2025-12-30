@@ -1,0 +1,83 @@
+/* Contact Form 7 スタイリング */
+.contact-form-wrapper .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-wrapper label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-wrapper input[type="text"],
+.contact-form-wrapper input[type="email"],
+.contact-form-wrapper input[type="tel"],
+.contact-form-wrapper select,
+.contact-form-wrapper textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    font-size: 1rem;
+}
+
+.contact-form-wrapper input[type="text"]:focus,
+.contact-form-wrapper input[type="email"]:focus,
+.contact-form-wrapper input[type="tel"]:focus,
+.contact-form-wrapper select:focus,
+.contact-form-wrapper textarea:focus {
+    outline: none;
+    border-color: #fd780f;
+    box-shadow: 0 0 0 3px rgba(253, 120, 15, 0.1);
+}
+
+.contact-form-wrapper textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form-wrapper .wpcf7-acceptance {
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.contact-form-wrapper .wpcf7-submit {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #fd780f;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-form-wrapper .wpcf7-submit:hover {
+    background-color: rgba(253, 120, 15, 0.9);
+}
+
+.contact-form-wrapper .wpcf7-submit:active {
+    transform: scale(0.98);
+}
+
+/* エラーメッセージのスタイル */
+.contact-form-wrapper .wpcf7-not-valid-tip {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.contact-form-wrapper .wpcf7-validation-errors {
+    border: 1px solid #dc2626;
+    background-color: #fef2f2;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
