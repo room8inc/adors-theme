@@ -28,6 +28,79 @@ if (defined('WP_DEBUG') && WP_DEBUG) {
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<!-- Loading Screen -->
+<div id="page-loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; z-index: 999999; display: flex; align-items: center; justify-content: center; transition: opacity 0.7s ease;">
+    <div style="position: relative; text-align: center;">
+        <!-- ロゴマーク -->
+        <div style="position: relative; display: inline-block;">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-mark.png'); ?>" 
+                 alt="Loading..." 
+                 style="width: 128px; height: 128px; object-fit: contain; animation: logoFloat 2s ease-in-out infinite;">
+            
+            <!-- パルスリング -->
+            <div style="position: absolute; inset: 0; border: 3px solid #FF6B00; border-radius: 50%; animation: pulse1 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; opacity: 0.3;"></div>
+            <div style="position: absolute; inset: 0; border: 3px solid #FF6B00; border-radius: 50%; animation: pulse2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; opacity: 0.2;"></div>
+        </div>
+        
+        <!-- テキスト -->
+        <div style="margin-top: 2rem;">
+            <p style="color: #9CA3AF; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.3em; animation: textPulse 1.5s ease-in-out infinite;">LOADING</p>
+        </div>
+    </div>
+</div>
+
+<!-- Opening Animation Screen (トップページ専用) -->
+<?php if (is_front_page()) : ?>
+<div id="opening-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; z-index: 999998; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none;">
+    <div style="text-align: center; max-width: 90%; padding: 2rem;">
+        <!-- アドーズロゴ -->
+        <div id="opening-logo" style="opacity: 0; transform: scale(0.8); transition: opacity 1s ease, transform 1s ease; margin-bottom: 4rem;">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo.svg'); ?>" 
+                 alt="ADOR'S" 
+                 style="width: auto; height: 80px; margin: 0 auto;">
+        </div>
+        
+        <!-- キャッチコピー -->
+        <div id="opening-catchcopy" style="opacity: 0;">
+            <h1 style="font-size: clamp(2rem, 8vw, 5rem); font-weight: 900; color: #1F2937; line-height: 1.2; letter-spacing: -0.02em;">
+                <span id="catch-line1" style="display: block; opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease;">
+                    違反ゼロと、
+                </span>
+                <span id="catch-line2" style="display: block; opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; color: #FF6B00;">
+                    無駄ゼロへ。
+                </span>
+            </h1>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
+
+<style>
+    @keyframes logoFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes pulse1 {
+        0%, 100% { transform: scale(1); opacity: 0.3; }
+        50% { transform: scale(1.1); opacity: 0.1; }
+    }
+    
+    @keyframes pulse2 {
+        0%, 100% { transform: scale(1); opacity: 0.2; }
+        50% { transform: scale(1.2); opacity: 0.05; }
+    }
+    
+    @keyframes textPulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+    
+    body.loading {
+        overflow: hidden !important;
+    }
+</style>
+
 <div id="page" class="site min-h-screen flex flex-col">
     <!-- ヘッダー -->
     <header id="masthead" class="site-header bg-white border-b-2 border-primary/10 sticky top-0 z-50 shadow-sm">
@@ -96,9 +169,9 @@ if (defined('WP_DEBUG') && WP_DEBUG) {
                     ));
                     ?>
                     
-                    <!-- お問い合わせボタン -->
+                    <!-- 無料見積診断ボタン -->
                     <a href="<?php echo esc_url(home_url('/contact')); ?>" class="inline-flex items-center px-8 py-3 bg-primary text-white font-bold rounded-sm hover:bg-gray-900 transition-all duration-300">
-                        お問い合わせ
+                        無料見積診断
                     </a>
                 </nav>
 
@@ -144,9 +217,9 @@ if (defined('WP_DEBUG') && WP_DEBUG) {
                 ));
                 ?>
                 
-                <!-- モバイル用お問い合わせボタン -->
+                <!-- モバイル用無料見積診断ボタン -->
                 <a href="<?php echo esc_url(home_url('/contact')); ?>" class="block w-full text-center px-4 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary-600 transition-colors mt-4">
-                    お問い合わせ
+                    無料見積診断
                 </a>
             </div>
         </div>

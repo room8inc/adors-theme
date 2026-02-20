@@ -1,0 +1,282 @@
+<?php
+/**
+ * コンセプトページテンプレート
+ *
+ * @package ADOR'S
+ */
+
+get_header();
+?>
+
+<main id="main" class="site-main">
+    <!-- ページヘッダー -->
+    <section class="page-header bg-primary text-white py-16">
+        <div class="container">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">ADOR'Sについて</h1>
+            <p class="text-lg opacity-90">選ばれる理由、他社との違い</p>
+        </div>
+    </section>
+
+    <!-- コンセプトメッセージ -->
+    <section class="concept-message py-16 lg:py-24">
+        <div class="container max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    法令の<span class="text-primary">『壁』</span>を、<br>
+                    利益を生む<span class="text-primary">『強み』</span>へ。
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    単なる法令遵守（守り）にとどまらず、専門家によるコストカットや設計自由度の向上といった「顧客メリット（攻め）」を前面に打ち出し、選ばれる理由を明確にします。
+                </p>
+            </div>
+
+            <!-- 選ばれる理由 -->
+            <div class="reasons-section mb-16">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">
+                    選ばれる5つの理由
+                </h3>
+                <div class="space-y-8">
+                    <div class="reason-item bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold text-primary">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-3">避難安全検証法による設計自由度の提供</h4>
+                                <p class="text-gray-600 mb-3">
+                                    仕様規定にとらわれず、避難安全検証法などの性能規定を活用。コスト削減と設計自由度を両立し、建築士の柔軟な提案を可能にします。
+                                </p>
+                                <p class="text-sm text-primary font-bold">
+                                    ➜ 「できない」ではなく「こうすればできる」を提案
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-item bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold text-primary">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-3">プロの視点によるサポート</h4>
+                                <p class="text-gray-600 mb-3">
+                                    防火・防災管理等の消防法令遵守確認（セカンドオピニオン）より安全な事業運営をサポートします。<br>
+                                    消防査察・指摘に対しての的確なアドバイスによってお客様の負担を軽減します。
+                                </p>
+                                <p class="text-sm text-primary font-bold">
+                                    ➜ 消防に関する不安を取り除く
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-item bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold text-primary">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-3">所轄消防署ごとの判断基準の違いに対応できる調整力</h4>
+                                <p class="text-gray-600 mb-3">
+                                    事前協議から使用開始、その後の運営まで、円滑な調整を実現します。
+                                </p>
+                                <p class="text-sm text-primary font-bold">
+                                    ➜ 言われたとおりにしたのに通らない → 地域に合わせた柔軟な対応
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-item bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold text-primary">
+                                4
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-3">法令遵守とコスト削減の両立</h4>
+                                <p class="text-gray-600 mb-3">
+                                    事前計画を査定し、より適切な消火設備を提案。過剰な設備を排除して、必要十分な設備構成を実現します。
+                                </p>
+                                <p class="text-sm text-primary font-bold">
+                                    ➜ 最小限のコストで、最大限の実効性
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-item bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold text-primary">
+                                5
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-3">「お客様」の立場に立った提案</h4>
+                                <p class="text-gray-600 mb-3">
+                                    売り手側の事情を挟まず、お客様の利益だけを追求できる立場で、最適な設備計画をご提案します。
+                                </p>
+                                <p class="text-sm text-primary font-bold">
+                                    ➜ 不透明な見積もりを一掃し、納得の価格へ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 他社との違い -->
+            <div class="difference-section bg-gray-50 rounded-lg p-8 lg:p-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-6">
+                    設備会社・他社との違い
+                </h3>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    一般的な消防設備企業やコンサルティング会社と比較しても、ADOR'Sは明確な差別化ポイントを持っています。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg p-6 border-2 border-primary/20">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">vs</div>
+                            <h4 class="text-lg font-bold text-gray-900">消防設備関連企業（メーカー）</h4>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">課題：</p>
+                        <ul class="text-sm text-gray-600 mb-4 space-y-1">
+                            <li>• 取扱製品ありきの提案</li>
+                            <li>• 過大な費用提示</li>
+                        </ul>
+                        <p class="text-sm font-bold text-primary">
+                            ADOR'Sの強み：<br>
+                            <span class="text-gray-900">中立的な立場で費用を適正化。お客様の立場に立った最適な設備計画で工事費10%削減を目指す。</span>
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 border-2 border-primary/20">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">vs</div>
+                            <h4 class="text-lg font-bold text-gray-900">一般的なコンサルティング会社</h4>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">課題：</p>
+                        <ul class="text-sm text-gray-600 mb-4 space-y-1">
+                            <li>• 消防法・危険物関係法令の専門性不足</li>
+                            <li>• 仕様規定に縛られた提案</li>
+                        </ul>
+                        <p class="text-sm font-bold text-primary">
+                            ADOR'Sの強み：<br>
+                            <span class="text-gray-900">消防法・危険物関係法令に特化した専門知識。避難安全検証法による「仕様規定に縛られない自由設計」を提供。</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- トータルサポート図 -->
+                <div class="mt-12 bg-white border border-gray-200 rounded-lg p-4 md:p-6">
+                    <h4 class="text-xl font-bold text-gray-900 text-center mb-8 md:mb-12">トータルサポート</h4>
+                    
+                    <div class="relative max-w-4xl mx-auto">
+                        <!-- 矢印 SVG -->
+                        <svg class="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <defs>
+                                <marker id="arrow-head-black" markerWidth="3" markerHeight="3" refX="2.5" refY="1.5" orient="auto">
+                                    <path d="M0,0 L3,1.5 L0,3 Z" fill="#111827" />
+                                </marker>
+                            </defs>
+                            
+                            <!-- 中央(ADOR'S)から上(安全)へ -->
+                            <line x1="50" y1="65" x2="50" y2="35" stroke="#111827" stroke-width="2" marker-end="url(#arrow-head-black)" />
+                            
+                            <!-- 中央(ADOR'S)から左(コスト削減)へ -->
+                            <line x1="42" y1="75" x2="22" y2="75" stroke="#111827" stroke-width="2" marker-end="url(#arrow-head-black)" />
+                            
+                            <!-- 中央(ADOR'S)から右(法令遵守)へ -->
+                            <line x1="58" y1="75" x2="78" y2="75" stroke="#111827" stroke-width="2" marker-end="url(#arrow-head-black)" />
+                        </svg>
+
+                        <!-- コンテンツ -->
+                        <div class="relative z-10">
+                            <!-- 上段：安全 -->
+                            <div class="flex justify-center mb-12">
+                                <div class="w-48 h-48 bg-white border border-gray-200 rounded-lg flex flex-col items-center justify-center shadow-sm relative z-10 mx-auto flex-shrink-0" style="width: 192px; height: 192px;">
+                                    <div class="w-14 h-14 mx-auto mb-3 rounded-full border border-primary/20 flex items-center justify-center flex-shrink-0" style="width: 3.5rem; height: 3.5rem;">
+                                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-lg font-bold text-gray-900">安全</p>
+                                </div>
+                            </div>
+
+                            <!-- 下段：3要素 -->
+                            <div class="flex flex-row items-center justify-between gap-0 max-w-3xl mx-auto">
+                                <!-- 左：コスト削減 -->
+                                <div class="w-48 h-48 bg-white border border-gray-200 rounded-lg flex flex-col items-center justify-center shadow-sm relative z-10 mx-auto flex-shrink-0" style="width: 192px; height: 192px;">
+                                    <div class="w-14 h-14 mx-auto mb-3 rounded-full border border-primary/20 flex items-center justify-center flex-shrink-0" style="width: 3.5rem; height: 3.5rem;">
+                                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-lg font-bold text-gray-900">コスト削減</p>
+                                </div>
+
+                                <!-- 中央：ADOR'S -->
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary text-white rounded-full flex flex-col items-center justify-center font-bold text-center shadow-lg transform translate-y-2 relative z-20 border-4 border-white mx-auto flex-shrink-0" style="width: 150px; height: 150px;">
+                                        <span class="block text-xs mb-1 opacity-90">株式会社</span>
+                                        <span class="block text-xl tracking-wider">ADOR'S</span>
+                                    </div>
+                                </div>
+
+                                <!-- 右：法令遵守 -->
+                                <div class="w-48 h-48 bg-white border border-gray-200 rounded-lg flex flex-col items-center justify-center shadow-sm relative z-10 mx-auto flex-shrink-0" style="width: 192px; height: 192px;">
+                                    <div class="w-14 h-14 mx-auto mb-3 rounded-full border border-primary/20 flex items-center justify-center flex-shrink-0" style="width: 3.5rem; height: 3.5rem;">
+                                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6l-7 4 7 4 7-4-7-4z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10v6l7 4 7-4v-6"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-lg font-bold text-gray-900">法令遵守</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 具体的なコスト削減例 -->
+                <div class="mt-12 bg-white border-2 border-primary rounded-lg p-8 text-center">
+                    <div class="inline-block bg-primary text-white text-xs font-bold px-4 py-2 mb-4 uppercase tracking-wider">Cost Reduction</div>
+                    <h4 class="text-2xl font-black text-gray-900 mb-4">工事費の10%削減を目指す</h4>
+                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                        提出された見積書を査定し、より安価で適切な消火設備を提案することで、コスト削減と法令遵守を両立します。
+                    </p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                        <div class="text-center">
+                            <div class="text-4xl font-black text-gray-300 mb-2">Before</div>
+                            <div class="text-2xl font-bold text-gray-600">メーカー見積もり</div>
+                            <div class="text-sm text-gray-500">過剰設備・言い値</div>
+                        </div>
+                        <div class="text-4xl text-primary font-black">→</div>
+                        <div class="text-center bg-primary/5 border border-primary/20 rounded-lg px-6 py-4">
+                            <div class="text-4xl font-black text-primary mb-2">After</div>
+                            <div class="text-2xl font-bold text-gray-900">ADOR'S提案</div>
+                            <div class="text-sm text-primary font-bold">約10%削減</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section bg-primary py-16 lg:py-20">
+        <div class="container text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                まずは無料相談から
+            </h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                お客様の課題に合わせた最適なソリューションをご提案します
+            </p>
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn bg-white text-primary hover:bg-gray-100 text-lg px-8 py-4 inline-block">
+                お問い合わせ・無料相談
+            </a>
+        </div>
+    </section>
+</main>
+
+<?php
+get_footer();

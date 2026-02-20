@@ -13,7 +13,7 @@
                 <div>
                     <h3 class="text-xl font-bold mb-6">ADOR'S</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        消防法・危険物法のプロフェッショナルが、<br>
+                        消防法・危険物関係法令のプロフェッショナルが、<br>
                         あなたのビジネスを守り、成長させます。
                     </p>
                 </div>
@@ -23,23 +23,23 @@
                     <h3 class="text-lg font-bold mb-6">サービス</h3>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <a href="<?php echo esc_url(home_url('/service#fire-prevention')); ?>" class="text-gray-400 hover:text-primary transition-colors">
+                            <a href="<?php echo esc_url(home_url('/service#fire-consulting')); ?>" class="text-gray-400 hover:text-primary transition-colors">
                                 消防法コンサルティング
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo esc_url(home_url('/service#hazardous-materials')); ?>" class="text-gray-400 hover:text-primary transition-colors">
+                            <a href="<?php echo esc_url(home_url('/service#hazardous-consulting')); ?>" class="text-gray-400 hover:text-primary transition-colors">
                                 危険物施設コンサルティング
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo esc_url(home_url('/service#consultation')); ?>" class="text-gray-400 hover:text-primary transition-colors">
-                                消防協議代行
+                            <a href="<?php echo esc_url(home_url('/service#fire-consultation')); ?>" class="text-gray-400 hover:text-primary transition-colors">
+                                消防協議支援
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo esc_url(home_url('/service#plan')); ?>" class="text-gray-400 hover:text-primary transition-colors">
-                                消防計画作成
+                            <a href="<?php echo esc_url(home_url('/service#document-support')); ?>" class="text-gray-400 hover:text-primary transition-colors">
+                                消防関係書類作成支援
                             </a>
                         </li>
                     </ul>
@@ -82,7 +82,8 @@
                             </a>
                         </li>
                         <li class="text-gray-400">
-                            <span class="block mb-1">TEL: 000-0000-0000</span>
+                            <span class="block mb-1">TEL 052-414-7217</span>
+                            <span class="block mb-1">FAX 052-414-7038</span>
                             <span class="block text-xs">受付時間: 平日 9:00-18:00</span>
                         </li>
                     </ul>

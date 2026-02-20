@@ -59,16 +59,45 @@ get_header();
             </section>
 
             <!-- 前後の投稿ナビゲーション -->
-            <section class="post-navigation bg-gray-50 py-8 border-t border-gray-200">
-                <div class="container max-w-4xl">
-                    <?php
-                    the_post_navigation(array(
-                        'prev_text' => '<span class="nav-subtitle">' . esc_html__('前へ:', 'adors') . '</span> <span class="nav-title">%title</span>',
-                        'next_text' => '<span class="nav-subtitle">' . esc_html__('次へ:', 'adors') . '</span> <span class="nav-title">%title</span>',
-                    ));
-                    ?>
+            <section class="border-t border-gray-200">
+                <div class="container max-w-5xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 border-b border-gray-200">
+                        <?php
+                        $prev_post = get_previous_post();
+                        if ($prev_post) :
+                        ?>
+                            <a href="<?php echo get_permalink($prev_post->ID); ?>" class="group block p-8 md:p-12 hover:bg-gray-50 transition-colors">
+                                <span class="block text-xs font-bold text-gray-400 tracking-widest uppercase mb-2 group-hover:text-primary transition-colors">PREV</span>
+                                <span class="block text-lg font-bold text-gray-900 group-hover:text-gray-600 transition-colors line-clamp-2">
+                                    <?php echo get_the_title($prev_post->ID); ?>
+                                </span>
+                            </a>
+                        <?php else : ?>
+                            <div class="hidden md:block"></div>
+                        <?php endif; ?>
+
+                        <?php
+                        $next_post = get_next_post();
+                        if ($next_post) :
+                        ?>
+                            <a href="<?php echo get_permalink($next_post->ID); ?>" class="group block p-8 md:p-12 text-right hover:bg-gray-50 transition-colors">
+                                <span class="block text-xs font-bold text-gray-400 tracking-widest uppercase mb-2 group-hover:text-primary transition-colors">NEXT</span>
+                                <span class="block text-lg font-bold text-gray-900 group-hover:text-gray-600 transition-colors line-clamp-2">
+                                    <?php echo get_the_title($next_post->ID); ?>
+                                </span>
+                            </a>
+                        <?php else : ?>
+                            <div class="hidden md:block"></div>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </section>
+            
+            <div class="text-center py-16">
+                <a href="<?php echo esc_url(home_url('/works')); ?>" class="inline-flex items-center text-gray-900 font-bold tracking-widest text-sm hover:text-primary transition-colors uppercase border-b border-gray-900 hover:border-primary pb-1">
+                    Back to Works
+                </a>
+            </div>
 
             <!-- 関連事例 -->
             <?php

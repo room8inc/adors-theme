@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hero Animation */
+.hero-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-element.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @layer base {
   body {
     @apply font-sans antialiased;
@@ -88,6 +101,69 @@
   }
 }
 
+/* ===========================
+   SVG装飾シェイプ
+   =========================== */
+
+/* セクション波型区切り（上下） */
+.section-wave-top,
+.section-wave-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section-wave-top {
+  top: -1px;
+}
+
+.section-wave-bottom {
+  bottom: -1px;
+}
+
+.section-wave-top svg,
+.section-wave-bottom svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 装飾ブロブ共通スタイル */
+.deco-blob {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 装飾ブロブ ゆるやかな浮遊アニメーション */
+@keyframes floatBlob {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg);
+  }
+}
+
+.deco-blob-animate {
+  animation: floatBlob 12s ease-in-out infinite;
+}
+
+/* 斜めカット背景 */
+.diagonal-bg {
+  position: relative;
+}
+
+.diagonal-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 /* Contact Form 7 スタイリング */
 .contact-form-wrapper .form-group {
   margin-bottom: 1.5rem;
@@ -169,5 +245,65 @@
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+}
+
+/* ===========================
+   Scroll Animation
+   =========================== */
+
+/* フェードインアップ: 下から上にふわっと出現 */
+.scroll-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.scroll-fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* フェードインLeft: 左からスライドイン */
+.scroll-fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.scroll-fade-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* フェードインRight: 右からスライドイン */
+.scroll-fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.scroll-fade-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* スケールイン: 小さい→通常サイズにふわっと */
+.scroll-scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-scale-in.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* アクセシビリティ: 動きを減らすユーザー設定 */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-fade-up,
+  .scroll-fade-left,
+  .scroll-fade-right,
+  .scroll-scale-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 

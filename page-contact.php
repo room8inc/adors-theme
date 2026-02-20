@@ -13,80 +13,54 @@ get_header();
     <section class="page-header bg-primary text-white py-16">
         <div class="container">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">お問い合わせ</h1>
-            <p class="text-lg opacity-90">概算見積もり・スポット相談・顧問契約など、お気軽にお問い合わせください</p>
+            <p class="text-lg opacity-90">初回ヒアリングは無料です。まずはお気軽にご相談ください</p>
         </div>
     </section>
 
-    <!-- 段階的CTA -->
+    <!-- 相談のハードルを下げる -->
     <section class="py-16 bg-gray-50">
-        <div class="container">
+        <div class="container max-w-5xl">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    まずは、お気軽に情報収集から
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 scroll-fade-up">
+                    初回ヒアリングは無料です
                 </h2>
-                <p class="text-gray-600 text-lg">
-                    いきなりお問い合わせは不安...という方も、まずは資料ダウンロードや簡単な診断から始められます。
+                <p class="text-gray-600 text-lg scroll-fade-up" data-delay="100">
+                    まずは気軽にご相談ください。専門スタッフが丁寧にお答えします。
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- ライト：資料ダウンロード -->
-                <div class="bg-white rounded-lg p-8 border-2 border-gray-200 hover:border-primary transition-all">
-                    <div class="text-center mb-4">
-                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4">
-                            <span class="text-3xl">📄</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">資料ダウンロード</h3>
-                        <p class="text-sm text-gray-500 mb-4">気軽に情報収集</p>
-                    </div>
-                    <ul class="text-sm text-gray-700 space-y-2 mb-6">
-                        <li>✓ 危険物取扱施設のリスクチェックリスト</li>
-                        <li>✓ コスト削減事例集</li>
-                        <li>✓ サービス資料</li>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-lg p-8 border-2 border-gray-200 scroll-fade-up" data-delay="0">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">こんな相談ができます</h3>
+                    <ul class="text-sm text-gray-700 space-y-2 mb-4">
+                        <li>✓ 消防署から指摘を受けたが対応方法がわからない</li>
+                        <li>✓ 法令改正への対応が必要だが社内に知識がない</li>
+                        <li>✓ 行政検査前に事前診断してほしい</li>
+                        <li>✓ 設備更新を検討しているが適切な計画がわからない</li>
+                        <li>✓ 年間契約とスポット契約、どちらが良いか相談したい</li>
+                        <li>✓ まずは話を聞いてみたい</li>
                     </ul>
-                    <a href="#download" class="block text-center bg-gray-100 text-gray-900 py-3 px-6 font-bold hover:bg-gray-200 transition-colors rounded">
-                        資料をダウンロード
-                    </a>
+                    <p class="text-sm text-gray-600">
+                        どんな些細なことでも構いません。お気軽にご相談ください。
+                    </p>
                 </div>
 
-                <!-- ミディアム：無料診断 -->
-                <div class="bg-white rounded-lg p-8 border-2 border-primary hover:shadow-lg transition-all relative">
-                    <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 uppercase">Popular</div>
-                    <div class="text-center mb-4">
-                        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                            <span class="text-3xl">✓</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">無料診断</h3>
-                        <p class="text-sm text-gray-500 mb-4">現状を把握</p>
-                    </div>
-                    <ul class="text-sm text-gray-700 space-y-2 mb-6">
-                        <li>✓ 建物内火災リスク診断</li>
-                        <li>✓ 法令適合性チェック</li>
-                        <li>✓ コスト削減可能性診断</li>
-                    </ul>
-                    <a href="#diagnosis" class="block text-center bg-primary text-white py-3 px-6 font-bold hover:bg-primary/90 transition-colors rounded">
-                        無料診断を申し込む
-                    </a>
+                <div class="bg-white rounded-lg p-8 border-2 border-gray-200 scroll-fade-up" data-delay="150">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">お問い合わせ後の流れ</h3>
+                    <ol class="text-sm text-gray-700 space-y-2">
+                        <li>1. お問い合わせ（フォームまたは電話）</li>
+                        <li>2. 初回無料ヒアリング（オンライン可）</li>
+                        <li>3. 簡易診断レポート提出</li>
+                        <li>4. お見積提示・契約内容のご説明</li>
+                        <li>5. 支援開始・継続フォロー</li>
+                    </ol>
                 </div>
+            </div>
 
-                <!-- ヘビー：お問い合わせ -->
-                <div class="bg-white rounded-lg p-8 border-2 border-gray-200 hover:border-primary transition-all">
-                    <div class="text-center mb-4">
-                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4">
-                            <span class="text-3xl">💬</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">お問い合わせ</h3>
-                        <p class="text-sm text-gray-500 mb-4">具体的な相談</p>
-                    </div>
-                    <ul class="text-sm text-gray-700 space-y-2 mb-6">
-                        <li>✓ 概算見積もり依頼</li>
-                        <li>✓ スポット相談</li>
-                        <li>✓ 顧問契約の相談</li>
-                    </ul>
-                    <a href="#contact-form" class="block text-center bg-gray-100 text-gray-900 py-3 px-6 font-bold hover:bg-gray-200 transition-colors rounded">
-                        お問い合わせフォームへ
-                    </a>
-                </div>
+            <div class="text-center">
+                <a href="#contact-form" class="inline-flex items-center justify-center px-12 py-4 bg-primary text-white text-lg font-bold hover:bg-primary/90 transition-colors rounded">
+                    無料ヒアリングを申し込む
+                </a>
             </div>
         </div>
     </section>
@@ -94,11 +68,11 @@ get_header();
     <!-- お問い合わせフォーム -->
     <section id="contact-form" class="contact-form-section py-16 lg:py-24">
         <div class="container max-w-4xl">
-            <div class="bg-white rounded-lg shadow-sm p-8 lg:p-12">
+            <div class="bg-white rounded-lg shadow-sm p-8 lg:p-12 contact-form-wrapper max-w-2xl mx-auto scroll-fade-up">
                 <?php
                 // Contact Form 7が有効な場合
                 if (shortcode_exists('contact-form-7')) {
-                    echo do_shortcode('[contact-form-7 id="275eb36" title="お問い合わせ"]');
+                    echo do_shortcode('[contact-form-7 id="3b9bb48" title="コンタクトフォーム 1"]');
                 } else {
                     // デフォルトのお問い合わせフォーム
                     ?>
@@ -139,7 +113,7 @@ get_header();
                                 <option value="contract">顧問契約の相談</option>
                                 <option value="diagnosis">リスク診断</option>
                                 <option value="filing">届出作成</option>
-                                <option value="app">スマメ（アプリ）について</option>
+                                <!-- <option value="app">スマメ（アプリ）について</option> リリース後に表示 -->
                                 <option value="other">その他</option>
                             </select>
                         </div>
@@ -183,7 +157,8 @@ get_header();
                 <div class="bg-white rounded-lg shadow-sm p-8">
                     <h3 class="text-xl font-bold text-gray-900 mb-4">お電話でのお問い合わせ</h3>
                     <p class="text-gray-600 mb-2">営業時間: 平日 9:00 - 18:00</p>
-                    <p class="text-2xl font-bold text-primary">0120-XXX-XXX</p>
+                    <p class="text-2xl font-bold text-primary mb-1">TEL 052-414-7217</p>
+                    <p class="text-xl font-bold text-gray-700">FAX 052-414-7038</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-sm p-8">
                     <h3 class="text-xl font-bold text-gray-900 mb-4">対応エリア</h3>
